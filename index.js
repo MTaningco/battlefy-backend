@@ -57,11 +57,16 @@ app.get("/api/latestMatches", async (req, res) => {
                         ];
     
                         let spellsList = [
-                            participantInfo.spell1Casts,
-                            participantInfo.spell2Casts,
-                            participantInfo.spell3Casts,
-                            participantInfo.spell4Casts
+                            // participantInfo.spell1Casts,
+                            // participantInfo.spell2Casts,
+                            participantInfo.summoner1Id,
+                            participantInfo.summoner2Id
                         ];
+
+                        // console.log(participantInfo.summoner1Casts);
+                        // console.log(participantInfo.summoner2Casts);
+                        // console.log(participantInfo.summoner1Id);
+                        // console.log(participantInfo.summoner2Id);
     
                         return {
                             outcome: participantInfo.win,
